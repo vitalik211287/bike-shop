@@ -56,7 +56,7 @@ img {
 }
 
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 1430px;
   /* display: flex; */
