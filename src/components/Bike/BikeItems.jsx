@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
+import { Li } from './Bike.styled';
 
 const BikeItems = ({bike}) => {
     console.log(bike);
   return (
-    <li>
+    <Li key={bike.toString()}>
       <Link to={`${bike}`}>{bike}</Link>
-    </li>
+    </Li>
   );
   //   <li>{childrem}</li>;
 };

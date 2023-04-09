@@ -1,9 +1,10 @@
-import Main from 'components/Home/Main/Main';
+import BikeList from "components/Bike/BikeList";
+
 
 
 const Mountainpage = () => {
   return (
-   <Main/>
+   <BikeList/>
   );
 };
 export default Mountainpage;
