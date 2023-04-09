@@ -16,7 +16,7 @@ export const Li = styled.li`
   border-radius: 12px;
   margin-bottom: 39px;
   margin-right: 39px;
-  &:nth-child(3n) {
+  &:nth-of-type(3n) {
     margin-right: 0;
   }
 `;

@@ -16,7 +16,7 @@ const BikeList = () => {
           'bike-8',
           'bike-9',
         ].map(bike => {
-          return <BikeItems bike={bike} />;
+          return <BikeItems key={bike.toString()} bike={bike} />;
         })}
       </Ul>
     </Section>
