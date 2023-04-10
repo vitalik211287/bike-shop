@@ -1,7 +1,7 @@
 import AppBar from 'components/AppBar/AppBar';
 import Footer from 'components/Footer/Footer';
 import { Outlet } from 'react-router-dom';
-import { LayoutBox } from './Layout.styled';
+import { LayoutBox, Main } from './Layout.styled';
 
 const Layout = () => {
   return (
@@ -9,12 +9,12 @@ const Layout = () => {
       <header>
         <AppBar />
       </header>
-      <main>
-        <Outlet />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+        <Main>
+          <Outlet />
+        </Main>
+        <footer>
+          <Footer />
+        </footer>
     </LayoutBox>
   );
 };

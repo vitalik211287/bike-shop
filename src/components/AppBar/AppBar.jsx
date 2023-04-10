@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import { AppBarBox, Ul, NaVlink, Nav, Li   } from './AppBar.styled';
+import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from '@mui/material';
 
 const AppBar = () => {
+  const isTablet = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 1600 });
   return (
     <AppBarBox>
     <Link to="/">Logo</Link>
-      <Nav>
+    {isDesktop && <Nav>
         <Ul>
           <Li>
           <NaVlink to="/mountain">Mountain</NaVlink>
@@ -23,7 +27,8 @@ const AppBar = () => {
           <NaVlink to="/electric">Electric</NaVlink>
           </Li>
         </Ul>
-      </Nav>
+      </Nav>}
+      
     </AppBarBox>
   );
 };
