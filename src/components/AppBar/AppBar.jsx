@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 // import { useMediaQuery } from '@mui/material';
 
 const AppBar = () => {
-  const isTablet = useMediaQuery({ minWidth: 768 });
+  // const isTablet = useMediaQuery({ minWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 1600 });
   return (
     <AppBarBox>
