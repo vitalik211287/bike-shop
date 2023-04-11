@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bike-shop/static/css/main.e87129b2.css",
-    "main.js": "/bike-shop/static/js/main.700e7ea7.js",
+    "main.css": "/bike-shop/static/css/main.1a17b694.css",
+    "main.js": "/bike-shop/static/js/main.c48a60fc.js",
     "index.html": "/bike-shop/index.html",
-    "main.e87129b2.css.map": "/bike-shop/static/css/main.e87129b2.css.map",
-    "main.700e7ea7.js.map": "/bike-shop/static/js/main.700e7ea7.js.map"
+    "main.1a17b694.css.map": "/bike-shop/static/css/main.1a17b694.css.map",
+    "main.c48a60fc.js.map": "/bike-shop/static/js/main.c48a60fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e87129b2.css",
-    "static/js/main.700e7ea7.js"
+    "static/css/main.1a17b694.css",
+    "static/js/main.c48a60fc.js"
   ]
 }
