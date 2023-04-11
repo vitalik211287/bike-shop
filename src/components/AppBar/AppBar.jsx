@@ -1,35 +1,24 @@
 import { Link } from 'react-router-dom';
-import { AppBarBox, Ul, NaVlink, Nav, Li   } from './AppBar.styled';
+import { AppBarBox } from './AppBar.styled';
 import { useMediaQuery } from 'react-responsive';
-// import { useMediaQuery } from '@mui/material';
+import { ReactComponent as Logo } from '../../img/Logo.svg';
+import Navigation from 'components/Nav/Navigation';
+import ButtonBarHeader from 'components/ButtonBarHeader/ButtonBarHeader';
+import UnderAppBar from 'components/UnderAppBar/UnderAppBar';
 
 const AppBar = () => {
   // const isTablet = useMediaQuery({ minWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 1600 });
   return (
-    <AppBarBox>
-    <Link to="/">Logo</Link>
-    {isDesktop && <Nav>
-        <Ul>
-          <Li>
-          <NaVlink to="/mountain">Mountain</NaVlink>
-          </Li>
-          <Li>
-          <NaVlink to="/road">Road</NaVlink>
-          </Li>
-          <Li>
-          <NaVlink to="/active">Active</NaVlink>
-          </Li>
-          <Li>
-          <NaVlink to="/kids">Kids</NaVlink>
-          </Li>
-          <Li>
-          <NaVlink to="/electric">Electric</NaVlink>
-          </Li>
-        </Ul>
-      </Nav>}
-      
-    </AppBarBox>
+    <>
+      <AppBarBox>
+        <Link to="/">
+          <Logo />
+        </Link>
+        {isDesktop ? <Navigation /> : <ButtonBarHeader />}
+      </AppBarBox>
+     <UnderAppBar/>
+    </>
   );
 };
 export default AppBar;

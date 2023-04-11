@@ -1,10 +1,10 @@
-import About from "components/About/About";
+import Main from "components/Home/Main/Main";
 
 
 const Homepage = () => {
   return (
     <>
-      <About/>
+      <Main />
       {/* <p>SDFHDfhdf</p> */}
     </>
   );

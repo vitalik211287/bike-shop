@@ -3,8 +3,9 @@ import styled from '@emotion/styled';
 export const AppBox = styled.div`
 
 @media only screen and (min-width:320px) {
-    // background-color:red;
-    margin:  auto;
+    // background-color:grey;
+    margin: 0 auto;
+    min-width: 320px;
     // padding: 25px 25px 0 25px;
 }
 @media only screen and (min-width:480px) {
