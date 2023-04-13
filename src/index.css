@@ -69,6 +69,7 @@ footer {
   /* display: flex; */
   height: 32px;
   background-color: #061021;
+  /* background-size: cover; */
   color: white;
   /* flex-grow: 0; Запрещаем увеличиваться */
   flex-shrink: 0; /*Запрещаем сжиматься*/

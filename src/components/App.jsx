@@ -9,6 +9,8 @@ import Active from 'pages/Active';
 import Electric from 'pages/Electric';
 import Bike from 'pages/Bike';
 import { AppBox } from './App.styled';
+import Favorite from 'pages/Favorite';
+import AddToOrder from 'pages/AddToOrder';
 
 export const App = () => {
   return (
@@ -17,12 +19,15 @@ export const App = () => {
         <Route path="/" element={<Layout />}>
           {/* <Route index element={<AppBar />} /> */}
           <Route index element={<Homepage />} />
-          <Route path="mountain" element={<Mountain />}/>
-          <Route path="mountain/:id" element={<Bike/>} />
+          <Route path="mountain" element={<Mountain />} />
+          <Route path="mountain/:id" element={<Bike />} />
           <Route path="road" element={<Road />} />
           <Route path="kids" element={<Kids />} />
           <Route path="active" element={<Active />} />
           <Route path="electric" element={<Electric />} />
+          <Route path="favorite" element={<Favorite />} />
+          <Route path="addtoorder" element={<AddToOrder />} />
+
           {/* <Route path="/" element={<Homepage />} /> */}
         </Route>
       </Routes>

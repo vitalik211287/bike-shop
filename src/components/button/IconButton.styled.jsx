@@ -1,55 +1,66 @@
 import styled from '@emotion/styled';
+// import { ReactComponent as Heart } from '../../img/Vector.svg';
 
 export const Button = styled.button`
   border: none;
   background-color: unset;
-  // margin-left: 13px;
   padding: 0;
-  // display: inline-flax;
-  // align-item: center;
-  // justify-content: center;
-  // width: 100wh;
-  // height: 35px;
-  // color: white;
-  // border-radius: 2.5px;
-  // background: #26b9ff;
-  // margin: 10px;
-  // border: solid 1px black;
-  // transition: all 300ms linear;
-  // cursor: pointer;
-  // font-size: 20px;
-  // padding: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
   color: red;
-  :hover {
-    fill: inherit;
-    //   background-color: #26d7ff;
-    //   color: white;
-    //   border: solid 1px grey;
-  }
-`;
-export const Icon = styled.svg`
-  // border: none;
-  // background-color: unset;
+  border-radius: 50%;
+  // transition: 2000ms;
+  
+  // //  background-color: rgb(234, 34, 48, 0.2);
+  // // &:hover {
+  // //   color: red;
+  // //   background-color: rgb(234, 34, 48, 0.2);
+  // // }
+  // // &:active {
+  // //   stroke: red;
+  // //   background-color: unset;
+  // //   box-shadow: 0 0 0 0 rgb(234, 34, 48, 0.2);
+  // //   animation: pulse-blue 1s;
+  // // }
 
-  // display: inline-flax;
-  // align-item: center;
-  // justify-content: center;
-  // width: 100wh;
-  // height: 35px;
-  // color: white;
-  // border-radius: 2.5px;
-  // background: #26b9ff;
-  // margin: 10px;
-  // border: solid 1px black;
-  // transition: all 300ms linear;
-  // cursor: pointer;
-  // font-size: 20px;
-  // padding: 0 10px 0 10px;
-  color: red;
-  :hover {
-    fill: inherit;
-    //   background-color: #26d7ff;
-    //   color: white;
-    //   border: solid 1px grey;
+  // // @keyframes pulse-blue {
+  // //   0% {
+  // //     transform: scale(0.3);
+  // //     box-shadow: 0 0 0 0 rgba(234, 34, 48, 0.5);
+  // //   }
+
+  // //   70% {
+  // //     transform: scale(1);
+  // //     box-shadow: 0 0 0 10px rgba(234, 34, 48, 0);
+  // //   }
+
+  // //   100% {
+  // //     transform: scale(0.3);
+  // //     box-shadow: 0 0 0 0 rgba(234, 34, 48, 0);
+  // //   }
+  // // }
+  // :active {
+  //   background-color: red;
   }
-`;
+// `;
+// export const Favorite = styled(Heart)`
+//   stroke: black;
+//   // :hover {
+//   //   stroke: red;
+//   // }
+//   // :active {
+//   //   stroke: red;
+//   // }
+// `;
+// // export const Icon = styled.svg`
+//   stroke: black;
+//   :hover {
+//     stroke: red;
+//   }
+//   :active {
+//     stroke: red;
+//   }
+// `;
