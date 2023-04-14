@@ -1,52 +1,62 @@
-import { ReactComponent as Cart } from '../../img/Group.svg';
-
-import { ReactComponent as Burger } from '../../img/Burger.svg';
-import { ReactComponent as UserU } from '../../img/UserU.svg';
 import IconButton from 'components/button/IconButton';
-import { NaVlink, Ul } from './ButtonBarHeader.styled';
-import { ReactComponent as Heart } from '../../img/Vector.svg';
+import {
+  BurgerIcone,
+  CartIcone,
+  HeartIcone,
+  Ul,
+  UserUIcone,
+} from './ButtonBarHeader.styled';
 import { useState } from 'react';
-import Modal from 'components/Modal/Modal';
-import { ReactComponent as CloseIcon } from '../../img/Close.svg';
+import { NavLink } from 'react-router-dom';
+import CartModal from 'components/Modal/CartModal/CartModal';
+import UserModal from 'components/Modal/UserModal/UserModal';
+import BurgerModal from 'components/Modal/BurgerModal/BurgerModal';
 
 const ButtonBarHeader = () => {
-  const [toggl, setToggle] = useState(false);
-  const showModal = () => {
-    setToggle(!toggl);
+  const [open, setOpen] = useState(false);
+  const [opeN, setOpeN] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const isOpenCartModal = () => {
+    setOpen(true);
   };
+  const isOpenUsertModal = () => {
+    setOpeN(true);
+  };
+  const isOpenBurgerModal = () => {
+    setIsOpen(true);
+  };
+  const onClose = () => {
+    setOpeN(false);
+    setOpen(false);
+    setIsOpen(false);
+  };
+
   return (
     <>
-      {toggl && (
-        <Modal showModal={showModal}>
-          <h1>Hello</h1>
-          <IconButton onClick={showModal}>
-            <CloseIcon />
-          </IconButton>
-        </Modal>
-      )}
+      <CartModal open={open} onClose={onClose} />
+      <UserModal open={opeN} onClose={onClose} />
+      <BurgerModal open={isOpen} onClose={onClose} />
       <Ul>
         <li>
           <IconButton>
-            <NaVlink to="/favorite">
-              <Heart />
-            </NaVlink>
+            <NavLink to="/favorite">
+              <HeartIcone />
+            </NavLink>
           </IconButton>
         </li>
         <li>
-          <IconButton onClick={showModal}>
-            <UserU />
+          <IconButton onClick={isOpenUsertModal}>
+            <UserUIcone />
           </IconButton>
         </li>
         <li>
-          <IconButton>
-            <NaVlink to="/addtoorder">
-              <Cart />
-            </NaVlink>
+          <IconButton onClick={isOpenCartModal}>
+            <CartIcone />
           </IconButton>
         </li>
         <li>
-          <IconButton>
-            <Burger />
+          <IconButton onClick={isOpenBurgerModal}>
+            <BurgerIcone />
           </IconButton>
         </li>
       </Ul>

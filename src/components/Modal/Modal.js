@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 const modalRoot = document.querySelector('#modal-root');
 
-function Modal({ showModal, children }) {
+function Modal({ onClose, children }) {
   useEffect(() => {
     window.addEventListener('keydown', escapeClickHandler);
     return () => {
@@ -15,18 +15,18 @@ function Modal({ showModal, children }) {
 
   const escapeClickHandler = e => {
     if (e.code === 'Escape') {
-      showModal();
+      onClose();
     }
   };
 
   const handleBackdropClick = e => {
     if (e.currentTarget === e.target) {
-      showModal();
+      onClose();
     }
   };
 
   return createPortal(
-    <Backdrop onClick={handleBackdropClick}>
+    <Backdrop  onClick={handleBackdropClick}>
       <Modals>{children}</Modals>
     </Backdrop>,
     modalRoot

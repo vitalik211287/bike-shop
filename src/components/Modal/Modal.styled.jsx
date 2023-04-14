@@ -9,7 +9,7 @@ export const Backdrop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const Modals = styled.div`
@@ -19,7 +19,8 @@ export const Modals = styled.div`
   transform: translate(-50%, -50%);
   min-height: 300px;
   max-width: 600px;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   padding: 12px;
   background-color: #fff;
   border-radius: 3px;
