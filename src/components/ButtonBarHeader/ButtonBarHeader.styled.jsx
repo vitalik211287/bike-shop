@@ -11,8 +11,8 @@ export const Ul = styled.ul`
   width: 127px;
 `;
 
-export const Li = styled.li`
-:hover:not(.active)`;
+// export const Li = styled.li`
+// :hover:not(.active)`;
 
 export const HeartIcone = styled(Heart)`
   stroke: black;
@@ -53,3 +53,6 @@ export const UserUIcone = styled(UserU)`
     fill: #ea2230;
   }
 `;
+//  .active{
+
+//  }

@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 export const NavLinkButton = styled(NavLink)`
   box-sizing: border-box;
- 
+  width: 271px;
+  margin-top:37px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background: #ffffff;
   border: 2px solid #ea2230;
   border-radius: 13px;
