@@ -16,8 +16,11 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li`
-//   :active, :hover, :focus {
-//     color: #ea2230;
+width: 100%;
+margin-top: 27px;
+@media only screen and (min-width: 1600x) {
+  margin: 18px 0 18px 0;
+ }
   }
 `;
 
@@ -29,9 +32,9 @@ export const NaVlink = styled(NavLink)`
   line-height: 14px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  // padding: 18px 0 18px 0;
+  // margin-top: 27px;
   margin-left: 27px;
-  position: relative;
+  // position: relative;
   :hover:not(.active) {
     color: #ea2230;
   }
@@ -53,7 +56,7 @@ export const NaVlink = styled(NavLink)`
 color: red;
   }
   @media only screen and (min-width: 768px) {
-   padding: 18px 0 18px 0;
+ 
   }
 `;
 export const Nav = styled.nav`

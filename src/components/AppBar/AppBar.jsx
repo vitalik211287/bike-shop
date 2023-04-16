@@ -5,12 +5,13 @@ import { ReactComponent as Logo } from '../../img/Logo.svg';
 import Navigation from 'components/Nav/Navigation';
 import ButtonBarHeader from 'components/ButtonBarHeader/ButtonBarHeader';
 import UnderAppBar from 'components/UnderAppBar/UnderAppBar';
-import { useUser } from 'UserContext';
+import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 
 const AppBar = () => {
-  // const isTablet = useMediaQuery({ minWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 1600 });
-  const { isActive } = useUser();
+  
+
   return (
     <>
       <AppBarBox>
@@ -20,11 +21,7 @@ const AppBar = () => {
         {isDesktop ? <Navigation /> : <ButtonBarHeader />}
       </AppBarBox>
       <UnderAppBar />
-      {isActive && (
-        <div>
-          <Navigation />
-        </div>
-      )}
+      {!isDesktop && !isTablet && <BurgerMenu />}
     </>
   );
 };
