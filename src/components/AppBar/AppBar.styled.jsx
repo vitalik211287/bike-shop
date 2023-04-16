@@ -13,8 +13,7 @@ export const AppBarBox = styled.div`
   @media only screen and (min-width: 320px) {
   }
   // width: 320px;
-  @media only screen and (min-width: 480px) {
-    // width:480px;
-    // margin: 45px 75px 0 75px;
+  @media only screen and (min-width: 1600px) { 
+    justify-content: flex-start;
   }
 `;

@@ -10,32 +10,31 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CartModal from 'components/Modal/CartModal/CartModal';
 import UserModal from 'components/Modal/UserModal/UserModal';
-import BurgerModal from 'components/Modal/BurgerModal/BurgerModal';
+import { useUser } from 'UserContext';
 
 const ButtonBarHeader = () => {
   const [open, setOpen] = useState(false);
   const [opeN, setOpeN] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+
+  const { isActiveBurgerMenu } = useUser();
+
   const isOpenCartModal = () => {
     setOpen(true);
   };
   const isOpenUsertModal = () => {
     setOpeN(true);
   };
-  const isOpenBurgerModal = () => {
-    setIsOpen(true);
-  };
+
   const onClose = () => {
     setOpeN(false);
     setOpen(false);
-    setIsOpen(false);
   };
 
   return (
     <>
       <CartModal open={open} onClose={onClose} />
       <UserModal open={opeN} onClose={onClose} />
-      <BurgerModal open={isOpen} onClose={onClose} />
+      {/* <BurgerModal open={isOpen} onClose={onClose} /> */}
       <Ul>
         <li>
           <IconButton>
@@ -55,7 +54,7 @@ const ButtonBarHeader = () => {
           </IconButton>
         </li>
         <li>
-          <IconButton onClick={isOpenBurgerModal}>
+          <IconButton onClick={isActiveBurgerMenu}>
             <BurgerIcone />
           </IconButton>
         </li>

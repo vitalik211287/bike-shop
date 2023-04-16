@@ -6,6 +6,8 @@ export const Backdrop = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
+  // width: 200px;
+  // height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +21,10 @@ export const Modals = styled.div`
   transform: translate(-50%, -50%);
   min-height: 300px;
   max-width: 600px;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
+  width: 200px;
+  height: 200px;
   padding: 12px;
   background-color: #fff;
   border-radius: 3px;
