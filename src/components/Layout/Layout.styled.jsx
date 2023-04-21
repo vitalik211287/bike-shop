@@ -10,5 +10,5 @@ export const LayoutBox = styled.div`
 `;
 
 export const Main = styled.main`
-  min-height: calc(100vh - 345px);
+  min-height: calc(100vh - 420px);
 `;

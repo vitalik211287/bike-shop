@@ -6,7 +6,7 @@ import {
   Ul,
   UserUIcone,
 } from './ButtonBarHeader.styled';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CartModal from 'components/Modal/CartModal/CartModal';
 import UserModal from 'components/Modal/UserModal/UserModal';
@@ -17,6 +17,11 @@ const ButtonBarHeader = () => {
   const [opeN, setOpeN] = useState(false);
 
   const { isActiveBurgerMenu } = useUser();
+
+  // useEffect(() => {
+  //    isActiveBurgerMenu();
+  //    return ;
+  // }, []);
 
   const isOpenCartModal = () => {
     setOpen(true);
@@ -54,7 +59,7 @@ const ButtonBarHeader = () => {
           </IconButton>
         </li>
         <li>
-          <IconButton onClick={isActiveBurgerMenu}>
+          <IconButton onClick={()=>isActiveBurgerMenu()}>
             <BurgerIcone />
           </IconButton>
         </li>

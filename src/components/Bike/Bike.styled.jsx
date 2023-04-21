@@ -16,8 +16,9 @@ export const Li = styled.li`
   border-radius: 12px;
   width: 290px;
   height: 373px;
-  margin-bottom: 25px;
-  margin-right: 0;
+  // margin-bottom: 25px;
+  // margin-right: 0;
+  margin: 25px auto 0 auto;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
   @media only screen and (min-width: 480px) {
   }

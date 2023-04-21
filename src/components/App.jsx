@@ -12,6 +12,7 @@ import { AppBox } from './App.styled';
 import Favorite from 'pages/Favorite';
 import AddToOrder from 'pages/AddToOrder';
 import Catalog from 'pages/Catalog';
+import History from 'pages/History';
 
 export const App = () => {
   return (
@@ -29,6 +30,7 @@ export const App = () => {
           <Route path="favorite" element={<Favorite />} />
           <Route path="addtoorder" element={<AddToOrder />} />
           <Route path="catalog" element={<Catalog />} />
+          <Route path="history" element={<History />} />
 
           {/* <Route path="/" element={<Homepage />} /> */}
         </Route>

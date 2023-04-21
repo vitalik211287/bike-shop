@@ -10,7 +10,6 @@ import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 const AppBar = () => {
   const isTablet = useMediaQuery({ minWidth: 768 });
   const isDesktop = useMediaQuery({ minWidth: 1600 });
-  
 
   return (
     <>

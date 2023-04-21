@@ -19,7 +19,7 @@ export const Li = styled.li`
 width: 100%;
 margin-top: 27px;
 @media only screen and (min-width: 1600x) {
-  margin: 18px 0 18px 0;
+  // margin: 18px 0 18px 0;
  }
   }
 `;

@@ -7,7 +7,7 @@ export const NavLinkButton = styled(NavLink)`
   margin-top:37px;
   padding-top: 22px;
   padding-bottom: 22px;
-  background: #ffffff;
+  background: ;
   border: 2px solid #ea2230;
   border-radius: 13px;
   font-family: 'Roboto';
