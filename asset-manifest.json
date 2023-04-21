@@ -1,7 +1,9 @@
 {
   "files": {
     "main.css": "/bike-shop/static/css/main.e4dc4f71.css",
-    "main.js": "/bike-shop/static/js/main.1d023bae.js",
+    "main.js": "/bike-shop/static/js/main.64b51b1a.js",
+    "static/media/background.png": "/bike-shop/static/media/background.4050f195d00c35b0242a.png",
+    "static/media/Frame.png": "/bike-shop/static/media/Frame.4826073d259cdde970e1.png",
     "static/media/Logo.svg": "/bike-shop/static/media/Logo.3c37f32ed47a43103e56271a682fea54.svg",
     "static/media/UserU.svg": "/bike-shop/static/media/UserU.73ae6fac66acac5f85937460313601dd.svg",
     "static/media/bi_geo-alt.svg": "/bike-shop/static/media/bi_geo-alt.17fd12c90282464ac689bb82d2f42fba.svg",
@@ -11,10 +13,10 @@
     "static/media/Vector.svg": "/bike-shop/static/media/Vector.134dff05edcc60a26e70822d7803b80f.svg",
     "static/media/Burger.svg": "/bike-shop/static/media/Burger.c14960ffc867c308041f14a8366d4d74.svg",
     "main.e4dc4f71.css.map": "/bike-shop/static/css/main.e4dc4f71.css.map",
-    "main.1d023bae.js.map": "/bike-shop/static/js/main.1d023bae.js.map"
+    "main.64b51b1a.js.map": "/bike-shop/static/js/main.64b51b1a.js.map"
   },
   "entrypoints": [
     "static/css/main.e4dc4f71.css",
-    "static/js/main.1d023bae.js"
+    "static/js/main.64b51b1a.js"
   ]
 }
