@@ -7,7 +7,7 @@ const BestSellers = () => {
     <Section>
       <Text>Top sales</Text>
 
-      <NavLinkButton to="catalog">Catalog</NavLinkButton>
+      <NavLinkButton to="catalog" style={{color: 'white'}}>Catalog</NavLinkButton>
     </Section>
   );
 };

@@ -12,7 +12,7 @@ const NewHistory = () => {
         market. When people needed to ride cross-country on a cruiser, we
         created the first mountain bike.
       </Text>
-      <NavLinkButton to="history">More</NavLinkButton>
+      <NavLinkButton to="history" style={{color: 'white'}}>More</NavLinkButton>
     </Section>
   );
 };
