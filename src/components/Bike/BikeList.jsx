@@ -1,22 +1,14 @@
 import BikeItems from 'components/Bike/BikeItems';
 import { Section, Ul } from './Bike.styled';
+import collection from '../../../src/velo.json'
 
 const BikeList = () => {
   return (
     <Section>
       <Ul>
-        {[
-          'bike-1',
-          'bike-2',
-          'bike-3',
-          'bike-4',
-          'bike-5',
-          'bike-6',
-          'bike-7',
-          'bike-8',
-          'bike-9',
-        ].map(bike => {
-          return <BikeItems key={bike.toString()} bike={bike} />;
+        {collection.map(bike => {
+          console.log(bike);
+          return <BikeItems collection={collection}  bike={bike} />;
         })}
       </Ul>
     </Section>

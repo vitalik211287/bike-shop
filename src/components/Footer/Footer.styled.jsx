@@ -51,6 +51,7 @@ export const NaVlinkIcone = styled(NavLink)`
 `;
 export const UlSocial = styled.ul`
   display: flex;
+  align-items: center;
 `;
 export const UlContacts = styled.ul`
   margin-bottom: 26px;

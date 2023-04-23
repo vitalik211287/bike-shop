@@ -5,6 +5,7 @@ export const BikeDeteilsBox = styled.div`
 `;
 
 export const Ul = styled.ul`
+  width: 100%;
   @media only screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -14,11 +15,16 @@ export const Ul = styled.ul`
 export const Li = styled.li`
   background: #ffffff;
   border-radius: 12px;
-  width: 290px;
-  height: 373px;
+  // width: 260px;
+  // height: 100%;
   // margin-bottom: 25px;
   // margin-right: 0;
   margin: 25px auto 0 auto;
+  display: flex;
+  padding: 25px 15px 40px 15px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
   @media only screen and (min-width: 480px) {
   }

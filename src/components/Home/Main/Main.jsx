@@ -4,6 +4,7 @@ import { NavLinkButton } from 'components/Modal/CartModal/CartModal.styled';
 import bike from './Frame.png'
 
 
+
 const Main = () => {
   return (
     <Section>
