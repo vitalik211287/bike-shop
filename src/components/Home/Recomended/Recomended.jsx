@@ -22,7 +22,7 @@ const Recomended = () => {
       <Section>
         <Text>Recomended</Text>
         <Box>
-          <img src={img} alt={model} style={{ width: '232px' }} />
+          <img src={img} alt={model}/>
           <DivColorLink>
             <ColorSpane style={{ background: `${color}` }} />
             <NaVlink to={`${model}`}>
