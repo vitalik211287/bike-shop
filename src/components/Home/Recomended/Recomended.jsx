@@ -16,7 +16,7 @@ import {
 } from 'components/Bike/Bike.styled';
 
 const Recomended = () => {
-  const { model, price, color, brend, img, description } = collection[6];
+  const { model, price, color, brend, img, description } = collection[`${Math.round(Math.random()*11)}`];
   return (
     <>
       <Section>
